@@ -9,14 +9,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from gta4lve device
 $(call inherit-product, device/samsung/gta4lve/device.mk)
 
 PRODUCT_DEVICE := gta4lve
-PRODUCT_NAME := omni_gta4lve
+PRODUCT_NAME := twrp_gta4lve
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T509
 PRODUCT_MANUFACTURER := samsung
